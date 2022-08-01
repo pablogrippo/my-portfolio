@@ -1,0 +1,382 @@
+/*---------- Tipografias ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Roboto:wght@400;700&display=swap');
+
+
+/*---------- Estilos generales ----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #272F32;
+    background-color: #FFF;
+}
+
+main {
+    background-color: #DAEAEF;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---------- Encabezado ----------*/
+header {
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 80px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+header .logo {
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+}
+
+header .logo:hover {
+    transform: rotateZ(360deg) scale(1.1);
+}
+
+.navegacion {
+    list-style: none;
+    display: flex;
+}
+
+.navegacion .navegacion__link a {
+    color: #DAEAEF;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navegacion .navegacion__link a:hover {
+    color: #9DBDC6;
+}
+
+
+/*---------- Inicio ----------*/
+/*---------- Hero ----------*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.hero__titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em; /* 40px */
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    margin-bottom: 5px;
+}
+
+.hero__subtitulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em; /* 20px */
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero__boton {
+    color: #FFF;
+    background-color: #FF3D2E;
+    border-radius: 5px;
+    border: 3px solid #bb0e05;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bolder;
+    transition: 1s;
+}
+
+.hero__boton:hover {
+    background-color: #ed281e;
+    transform: scale(1.2);
+}
+
+
+/*---------- Bio ----------*/
+.bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px;
+}
+
+.bio__titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+/*---------- Mis habilidades ----------*/
+.skills {
+    padding: 75px;
+}
+.skills__titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.skills-icons__img {
+    width: 130px;
+    height: 120px;
+    margin: 10px;
+}
+
+
+/*---------- Servicios ----------*/
+.servicios div {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.servicios__titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.servicios-cards {
+    background-color: #FFF;
+    border-radius: 5px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
+}
+
+.servicios-cards__img {
+    width: 100px;
+    height: 100px;
+}
+
+.servicios-cards__titulo {
+    margin: 10px;
+}
+
+
+/*---------- Mis trabajos ----------*/
+.trabajos__titulo {
+    font-size: 2.2em;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.grid-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 225px;
+    gap: 25px;
+}
+
+.grid-container .trabajos-cards {
+    transition: 1s;
+}
+
+.grid-container .trabajos-cards:hover {
+    transform: scale(1.2);
+}
+
+.grid-container .trabajos-cards .trabajos-cards__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+
+/*---------- Contacto ----------*/
+.contacto__titulo {
+    font-size: 2.2em;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.flex-container__map {
+    margin: 0 25px;
+}
+
+.flex-container__form div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+
+/*---------- Footer ----------*/
+footer {
+    background-color: #272F32;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    padding: 0 5px;
+    list-style: none;
+}
+
+footer small {
+    color: #FFF;
+    margin-top: 5px;
+}
+
+.social-img {
+    width: 45px;
+    height: 45px;
+    margin: 2px;
+}
+
+
+/*---------- Responsive ----------*/
+@media screen and (max-width: 850px) {
+
+    /*---------- Servicios ----------*/
+    .servicios div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicios-cards {
+        width: 50%;
+    }
+
+    .servicios__titulo {
+        padding-top: 150px;
+    }
+
+    /*---------- Mis trabajos ----------*/
+    .trabajos__titulo {
+        padding-top: 150px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /*---------- Contacto ----------*/
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container__form {
+        width: 50%;
+    }
+
+    .flex-container__map {
+        padding: 30px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+
+    /*---------- Encabezado ----------*/
+    header {
+        flex-direction: column;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*---------- Hero ----------*/
+    .hero__img {
+        margin-top: 150px;
+    }
+
+    /*---------- Mis habilidades ----------*/
+    .skills__titulo {
+        padding-top: 200px;
+    }
+
+    /*---------- Servicios ----------*/
+    .servicios__titulo {
+        padding-top: 230px;
+    }
+
+    /*---------- Mis trabajos ----------*/
+    .trabajos__titulo {
+        padding-top: 250px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /*---------- Contacto ----------*/
+    .contacto__titulo {
+        padding-top: 250px;
+    }
+}
