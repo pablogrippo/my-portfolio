@@ -27,11 +27,7 @@ main {
 header {
     background-color: rgba(0,0,0,0.5);
     width: 100%;
-    height: 80px;
     padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
 }
 
@@ -48,6 +44,7 @@ header .logo:hover {
 .navegacion {
     list-style: none;
     display: flex;
+    justify-content: flex-end;
 }
 
 .navegacion .navegacion__link a {
@@ -280,7 +277,7 @@ footer small {
 
 
 /*---------- Responsive ----------*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 550px) {
 
     /*---------- Servicios ----------*/
     .servicios div {
@@ -321,15 +318,9 @@ footer small {
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1000px) {
 
     /*---------- Encabezado ----------*/
-    header {
-        flex-direction: column;
-        height: 200px;
-        padding: 10px;
-    }
-
     .navegacion {
         flex-direction: column;
         text-align: center;
