@@ -51,11 +51,15 @@ header .logo:hover {
     color: #DAEAEF;
     font-weight: 400;
     text-decoration: none;
-    padding: 10px;
+    margin: 2px;
+    padding: 10px 20px;
+    transition: background-color 1s;
 }
 
 .navegacion .navegacion__link a:hover {
-    color: #9DBDC6;
+    color: #333;
+    background-color: #DAEAEF;
+    border-radius: 2px;
 }
 
 
@@ -106,7 +110,7 @@ header .logo:hover {
     text-decoration: none;
     padding: 10px 20px;
     font-weight: bolder;
-    transition: 1s;
+    transition: transform 1s;
 }
 
 .hero__boton:hover {
@@ -265,14 +269,36 @@ footer ul li {
 
 footer small {
     color: #FFF;
-    margin-top: 5px;
-    margin-left: 55px;
+    margin-top: 15px;
 }
 
 .social-img {
     width: 45px;
-    height: 45px;
-    margin: 2px;
+    height: 45px;   
+}
+
+.github,
+.linkedin,
+.twitter {
+    transition: 1s;
+}
+
+.github:hover {
+    background-color: #333;
+    border-radius: 100%;
+    transform: scale(1.1);
+}
+
+.linkedin:hover {
+    background-color: #0966C2;
+    border-radius: 100%;
+    transform: scale(1.1);
+}
+
+.twitter:hover {
+    background-color: #1A8CD9;
+    border-radius: 100%;
+    transform: scale(1.1);
 }
 
 
