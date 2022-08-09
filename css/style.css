@@ -27,7 +27,8 @@ main {
 header {
     background-color: rgba(0,0,0,0.5);
     width: 100%;
-    padding: 0 15px;
+    height: 80px;
+    padding: 0 20px;
     position: fixed;
 }
 
@@ -67,7 +68,7 @@ header .logo:hover {
 /*---------- Hero ----------*/
 .hero {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/fondo.jpg);
     background-position: center;
     background-size: cover;
@@ -122,14 +123,14 @@ header .logo:hover {
 
 /*---------- Bio ----------*/
 .bio {
-    padding: 120px;
+    padding: 100px;
 }
 
 .bio__titulo {
     font-family: 'Roboto', sans-serif;
     font-size: 2.2em;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -143,7 +144,7 @@ header .logo:hover {
     font-size: 2.2em;
     font-weight: 400;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .skills-icons {
@@ -172,7 +173,7 @@ header .logo:hover {
     font-size: 2.2em;
     font-weight: 400;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 .card {
@@ -206,7 +207,7 @@ header .logo:hover {
     font-size: 2.2em;
     font-weight: 400;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 .grid-container {
@@ -244,7 +245,7 @@ header .logo:hover {
     font-size: 2.2em;
     font-weight: 400;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 
@@ -306,17 +307,8 @@ footer small {
 @media screen and (max-width: 550px) {
 
     /*---------- Servicios ----------*/
-    .servicios div {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .servicios-cards {
-        width: 50%;
-    }
-
     .servicios__titulo {
-        padding-top: 150px;
+        padding-top: 120px;
     }
 
     /*---------- Mis trabajos ----------*/
@@ -327,20 +319,7 @@ footer small {
     .grid-container {
         grid-template-columns: repeat(2,1fr);
     }
-
-    /*---------- Contacto ----------*/
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flex-container__form {
-        width: 50%;
-    }
-
-    .flex-container__map {
-        padding: 30px;
-    }
+    
 }
 
 
@@ -359,17 +338,22 @@ footer small {
 
     /*---------- Mis habilidades ----------*/
     .skills__titulo {
-        padding-top: 200px;
+        padding-top: 50px;
     }
 
     /*---------- Servicios ----------*/
     .servicios__titulo {
-        padding-top: 230px;
+        padding-top: 120px;
+    }
+
+    .servicios div {
+        flex-direction: column;
+        align-items: center;
     }
 
     /*---------- Mis trabajos ----------*/
     .trabajos__titulo {
-        padding-top: 250px;
+        padding-top: 120px;
     }
     .grid-container {
         grid-template-columns: repeat(1,1fr);
@@ -377,6 +361,17 @@ footer small {
 
     /*---------- Contacto ----------*/
     .contacto__titulo {
-        padding-top: 250px;
+        padding-top: 120px;
+    }
+
+    .contacto__form {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .contacto__mapa {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
     }
 }
