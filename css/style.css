@@ -165,7 +165,7 @@ header .logo:hover {
 .servicios__contenedor {
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin: 50px;
 }
 
 .servicios__titulo {
@@ -184,7 +184,7 @@ header .logo:hover {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    padding: 25px;
+    padding: 30px;
     text-align: center;
     box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
@@ -347,7 +347,7 @@ footer small {
         padding-top: 120px;
     }
 
-    .servicios div {
+    .servicios__contenedor {
         flex-direction: column;
         align-items: center;
     }
