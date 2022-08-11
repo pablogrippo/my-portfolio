@@ -1,0 +1,69 @@
+/*---------- Responsive ----------*/
+@media screen and (max-width: 550px) {
+    /*---------- Servicios ----------*/
+    .servicios__titulo {
+        padding-top: 120px;
+    }
+
+    /*---------- Mis trabajos ----------*/
+    .trabajos__titulo {
+        padding-top: 150px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    /*---------- Encabezado ----------*/
+    .navegacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*---------- Hero ----------*/
+    .hero__img {
+        margin-top: 100px;
+    }
+
+    /*---------- Mis habilidades ----------*/
+    .skills__titulo {
+        padding-top: 120px;
+    }
+
+    /*---------- Servicios ----------*/
+    .servicios__titulo {
+        padding-top: 120px;
+    }
+
+    .servicios__contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*---------- Mis trabajos ----------*/
+    .trabajos__titulo {
+        padding-top: 120px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /*---------- Contacto ----------*/
+    .contacto__titulo {
+        padding-top: 120px;
+    }
+
+    .contacto__form {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .contacto__mapa {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,24 @@
+/*---------- Tipografias & Variables Sass ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Roboto:wght@400;700&display=swap');
+@import "./variables";
+
+
+/*---------- Estilos generales ----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-principal;
+    font-size: 16px;
+    font-weight: 300;
+    color: $color-principal;
+    background-color: $color-fondo;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}

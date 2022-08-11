@@ -1,0 +1,36 @@
+/*---------- Encabezado ----------*/
+header {
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 0 20px;
+    position: fixed;
+    .logo {
+        width: 50px;
+        height: 50px;
+        transition: 1s;
+        &:hover {
+            transform: rotateZ(360deg) scale(1.1);
+        }
+    }
+}
+
+.navegacion {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    .navegacion__link {
+        a {
+            color: #DAEAEF;
+            font-weight: 400;
+            text-decoration: none;
+            margin: 2px;
+            padding: 10px 20px;
+            transition: background-color 1s;
+            &:hover {
+                color: #333;
+                background-color: #DAEAEF;
+                border-radius: 2px;
+            }
+        }
+    }
+}
