@@ -1,8 +1,5 @@
-/*---------- Tipografias & Variables Sass ----------*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Roboto:wght@400;700&display=swap");
-/*---------- Colores ----------*/
 /*---------- Tipografias ----------*/
-/*---------- Box model ----------*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Roboto:wght@400;700&display=swap");
 /*---------- Estilos generales ----------*/
 * {
   margin: 0;
@@ -49,9 +46,26 @@ header {
       background-color: #DAEAEF;
       border-radius: 2px; }
 
-/*---------- Colores ----------*/
-/*---------- Tipografias ----------*/
-/*---------- Box model ----------*/
+.bio__titulo, .skills__titulo, .servicios__titulo, .trabajos__titulo, .contacto__titulo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2em;
+  font-weight: 400;
+  text-align: center; }
+
+.hero, .skills .skills-icons, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.github:hover, .linkedin:hover, .twitter:hover {
+  border-radius: 100%;
+  transform: scale(1.1); }
+
+.servicios__contenedor .card, .grid-container .trabajos-cards__img {
+  box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75); }
+
 /*---------- Inicio ----------*/
 /*---------- Hero ----------*/
 .hero {
@@ -63,31 +77,26 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #FFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .hero .hero__img {
+  flex-direction: column; }
+  .hero__img {
     width: 200px;
     height: 200px;
     margin-top: 100px;
     margin-bottom: 10px; }
-  .hero .hero__titulo {
-    font-family: "Roboto", sans-serif;
+  .hero__titulo {
     font-size: 2.5em;
-    /* 40px */
     font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin-bottom: 5px; }
-  .hero .hero__subtitulo {
+    margin-bottom: 5px;
     font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+  .hero__subtitulo {
     font-size: 1.2em;
-    /* 20px */
     font-weight: 400;
-    margin-bottom: 20px; }
-  .hero .hero__boton {
-    color: #FFF;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif; }
+  .hero__boton {
+    color: #fff;
     background-color: #FF3D2E;
     border-radius: 5px;
     border: 3px solid #bb0e05;
@@ -95,7 +104,7 @@ header {
     padding: 10px 20px;
     font-weight: bolder;
     transition: transform 1s; }
-    .hero .hero__boton:hover {
+    .hero__boton:hover {
       color: #FFF;
       background-color: #ed281e;
       transform: scale(1.2); }
@@ -103,38 +112,23 @@ header {
 /*---------- Bio ----------*/
 .bio {
   padding: 100px; }
-  .bio .bio__titulo {
-    font-family: "Roboto", sans-serif;
-    font-size: 2.2em;
-    font-weight: 400;
-    margin-bottom: 50px;
-    text-align: center; }
+  .bio__titulo {
+    margin-bottom: 50px; }
 
 /*---------- Mis habilidades ----------*/
 .skills {
   padding-bottom: 150px; }
-  .skills .skills__titulo {
-    font-family: "Roboto", sans-serif;
-    font-size: 2.2em;
-    font-weight: 400;
-    text-align: center;
+  .skills__titulo {
     padding-top: 120px; }
   .skills .skills-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 75px; }
-    .skills .skills-icons .skills-icons__img {
+    .skills .skills-icons__img {
       width: 130px;
       height: 120px;
       margin: 10px; }
 
 /*---------- Servicios ----------*/
 .servicios__titulo {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.2em;
-  font-weight: 400;
-  text-align: center;
   padding-top: 120px; }
 
 .servicios__contenedor {
@@ -150,10 +144,7 @@ header {
     align-items: center;
     margin: 10px;
     padding: 30px;
-    text-align: center;
-    box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75); }
+    text-align: center; }
     .servicios__contenedor .card .card-img-top {
       width: 150px;
       height: 150px; }
@@ -163,10 +154,6 @@ header {
 
 /*---------- Mis trabajos ----------*/
 .trabajos__titulo {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.2em;
-  font-weight: 400;
-  text-align: center;
   padding-top: 120px; }
 
 .grid-container {
@@ -182,35 +169,42 @@ header {
     transition: 1s; }
     .grid-container .trabajos-cards:hover {
       transform: scale(1.2); }
-    .grid-container .trabajos-cards .trabajos-cards__img {
+    .grid-container .trabajos-cards__img {
       width: 100%;
       height: 100%;
       border-radius: 5px;
-      object-fit: cover;
-      box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.75); }
+      object-fit: cover; }
 
 /*---------- Contacto ----------*/
 .contacto__titulo {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.2em;
-  font-weight: 400;
-  text-align: center;
   padding-top: 120px; }
 
-/*---------- Colores ----------*/
-/*---------- Tipografias ----------*/
-/*---------- Box model ----------*/
+.bio__titulo, .skills__titulo, .servicios__titulo, .trabajos__titulo, .contacto__titulo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2em;
+  font-weight: 400;
+  text-align: center; }
+
+.hero, .skills .skills-icons, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.github:hover, .linkedin:hover, .twitter:hover {
+  border-radius: 100%;
+  transform: scale(1.1); }
+
+.servicios__contenedor .card, .grid-container .trabajos-cards__img {
+  box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75); }
+
 /*---------- Footer ----------*/
 footer {
   background-color: #272F32;
   width: 100%;
   height: 160px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
   footer ul {
     display: flex; }
     footer ul li {
@@ -230,19 +224,13 @@ footer {
   transition: 1s; }
 
 .github:hover {
-  background-color: #333;
-  border-radius: 100%;
-  transform: scale(1.1); }
+  background-color: #333; }
 
 .linkedin:hover {
-  background-color: #0966C2;
-  border-radius: 100%;
-  transform: scale(1.1); }
+  background-color: #0966C2; }
 
 .twitter:hover {
-  background-color: #1A8CD9;
-  border-radius: 100%;
-  transform: scale(1.1); }
+  background-color: #1A8CD9; }
 
 /*---------- Responsive ----------*/
 @media screen and (max-width: 550px) {

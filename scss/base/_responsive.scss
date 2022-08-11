@@ -1,8 +1,11 @@
+@import "./variables";
+
+
 /*---------- Responsive ----------*/
 @media screen and (max-width: 550px) {
     /*---------- Servicios ----------*/
     .servicios__titulo {
-        padding-top: 120px;
+        padding-top: $padding-top;
     }
 
     /*---------- Mis trabajos ----------*/
@@ -30,12 +33,12 @@
 
     /*---------- Mis habilidades ----------*/
     .skills__titulo {
-        padding-top: 120px;
+        padding-top: $padding-top;
     }
 
     /*---------- Servicios ----------*/
     .servicios__titulo {
-        padding-top: 120px;
+        padding-top: $padding-top;
     }
 
     .servicios__contenedor {
@@ -45,7 +48,7 @@
 
     /*---------- Mis trabajos ----------*/
     .trabajos__titulo {
-        padding-top: 120px;
+        padding-top: $padding-top;
     }
     .grid-container {
         grid-template-columns: repeat(1,1fr);
@@ -53,7 +56,7 @@
 
     /*---------- Contacto ----------*/
     .contacto__titulo {
-        padding-top: 120px;
+        padding-top: $padding-top;
     }
 
     .contacto__form {
