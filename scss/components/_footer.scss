@@ -4,13 +4,14 @@
 
 /*---------- Footer ----------*/
 footer {
-    background-color: $color-principal;
     width: $width;
-    height: 160px;
+    height: 150px;
     @extend %flex;
     flex-direction: column;
     ul {
         display: flex;
+        justify-content: center;
+        padding-left: 0;
         li {
             padding: 0 5px;
             list-style: none;
@@ -23,8 +24,8 @@ footer {
 }
 
 .social-img {
-    width: 45px;
-    height: 45px;   
+    width: 30px;
+    height: 30px;   
 }
 
 .github,

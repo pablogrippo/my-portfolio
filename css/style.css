@@ -10,8 +10,8 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #272F32;
-  background-color: #9DBDC6; }
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #18202E; }
 
 main {
   width: 100%;
@@ -61,7 +61,7 @@ header {
   border-radius: 100%;
   transform: scale(1.1); }
 
-.servicios__contenedor .card, .grid-container .trabajos-cards__img {
+.hero__img, .servicios__contenedor .card, .grid-container .trabajos-cards__img {
   box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75); }
@@ -79,10 +79,12 @@ header {
   color: #FFF;
   flex-direction: column; }
   .hero__img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin-top: 100px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    border-radius: 100%;
+    border: 2px solid #FFF; }
   .hero__titulo {
     font-size: 2.5em;
     font-weight: 700;
@@ -114,6 +116,8 @@ header {
   padding: 100px; }
   .bio__titulo {
     margin-bottom: 50px; }
+  .bio__descripcion {
+    text-align: center; }
 
 /*---------- Mis habilidades ----------*/
 .skills {
@@ -149,8 +153,11 @@ header {
       width: 150px;
       height: 150px; }
     .servicios__contenedor .card .card-title {
+      color: #18202E;
       font-size: 1.5em;
       margin: 10px; }
+    .servicios__contenedor .card .card-text {
+      color: #18202E; }
 
 /*---------- Mis trabajos ----------*/
 .trabajos__titulo {
@@ -194,19 +201,20 @@ header {
   border-radius: 100%;
   transform: scale(1.1); }
 
-.servicios__contenedor .card, .grid-container .trabajos-cards__img {
+.hero__img, .servicios__contenedor .card, .grid-container .trabajos-cards__img {
   box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 0.75); }
 
 /*---------- Footer ----------*/
 footer {
-  background-color: #272F32;
   width: 100%;
-  height: 160px;
+  height: 150px;
   flex-direction: column; }
   footer ul {
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    padding-left: 0; }
     footer ul li {
       padding: 0 5px;
       list-style: none; }
@@ -215,8 +223,8 @@ footer {
     margin-top: 15px; }
 
 .social-img {
-  width: 45px;
-  height: 45px; }
+  width: 30px;
+  height: 30px; }
 
 .github,
 .linkedin,

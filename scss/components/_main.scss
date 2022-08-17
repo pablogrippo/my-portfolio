@@ -18,10 +18,13 @@
     @extend %flex;
     flex-direction: column;
     &__img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         margin-top: 100px;
         margin-bottom: 10px;
+        border-radius: 100%;
+        border: 2px solid #FFF;
+        @extend %shadow;
     }
     &__titulo {
         @include titulo (2.5em, 700, 5px);
@@ -57,6 +60,9 @@
     &__titulo {
         @extend %font;
         margin-bottom: 50px;
+    }
+    &__descripcion {
+        text-align: center;
     }
 }
 
@@ -106,8 +112,12 @@
             height: 150px;
         }
         .card-title {
+            color: $color-fondo;
             font-size: 1.5em;
             margin: 10px;
+        }
+        .card-text {
+            color: $color-fondo;
         }
     }    
 }
