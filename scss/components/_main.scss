@@ -56,13 +56,9 @@
 
 /*---------- Bio ----------*/
 .bio {
-    padding: 100px;
     &__titulo {
         @extend %font;
-        margin-bottom: 50px;
-    }
-    &__descripcion {
-        text-align: center;
+        margin-bottom: 75px;
     }
 }
 
