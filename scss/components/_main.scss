@@ -72,6 +72,7 @@
     }
     .skills-icons {
         @extend %flex;
+        flex-wrap: wrap;
         margin-top: 75px;
         &__img {
             width: 130px;

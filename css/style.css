@@ -122,6 +122,7 @@ header {
   .skills__titulo {
     padding-top: 120px; }
   .skills .skills-icons {
+    flex-wrap: wrap;
     margin-top: 75px; }
     .skills .skills-icons__img {
       width: 130px;
