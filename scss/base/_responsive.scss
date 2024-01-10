@@ -6,6 +6,7 @@
     /*---------- Hero ----------*/
     .hero__titulo {
         @include titulo (2.8em, 700, 5px, 130px);
+        padding: 0 15px;
     }
 
     /*---------- Servicios ----------*/
