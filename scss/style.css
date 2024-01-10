@@ -299,6 +299,13 @@ footer small {
 
 /*---------- Responsive ----------*/
 @media screen and (max-width: 550px) {
+  /*---------- Hero ----------*/
+  .hero__titulo {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 130px;
+  }
   /*---------- Servicios ----------*/
   .servicios__titulo {
     padding-top: 120px;

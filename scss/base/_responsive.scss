@@ -3,6 +3,11 @@
 
 /*---------- Responsive ----------*/
 @media screen and (max-width: 550px) {
+    /*---------- Hero ----------*/
+    .hero__titulo {
+        @include titulo (3em, 700, 5px, 130px);
+    }
+
     /*---------- Servicios ----------*/
     .servicios__titulo {
         padding-top: $padding-top;
