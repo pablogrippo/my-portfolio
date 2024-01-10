@@ -1,5 +1,6 @@
-@mixin titulo ($size, $weight, $marginBottom) {
+@mixin titulo ($size, $weight, $marginBottom, $marginTop) {
     font-size: $size;
     font-weight: $weight;
     margin-bottom: $marginBottom;
+    margin-top: $marginTop;
 }
