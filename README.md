@@ -1,6 +1,8 @@
 <h1 align="center">Hi 👋, I'm Pablo Grippo</h1>
 <h3 align="center">An aspiring frontend developer from Buenos Aires, Argentina</h3>
 
+<h3 align="left">Proyecto creado para el curso de Desarrollo Web en CoderHouse</h3>
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
