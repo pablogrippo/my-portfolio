@@ -5,6 +5,8 @@
 
 <h3 align="center">Connect with me:</h3>
 <p align="center">
+  E-mail: pablogrippo@gmail.com
+  Linkedin: linkedin.com/in/pablo-grippo
 </p>
 
 <h3 align="center">Languages and Tools:</h3>
